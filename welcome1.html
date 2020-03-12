@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>W.W.S.</title>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      text-shadow: 4px 4px 4px #aaa;
+    }
+  </style>
+  <style>
+    body {
+      width:1000px;
+    }
+    #header{
+      display:flex;
+      width:990px;
+      height:100px;
+      padding:4px;
+      color:white;
+      background-image:url('up.jpg');
+      text-align:center;
+    }
+    #section {
+      float:left;
+      width:187px;
+      height:420px;
+      background-color:rgb(240, 240, 240);
+    }
+    #article {
+      width:180px;
+      margin:4px;
+      background-color:#ffffffe8;
+    }
+    #aside {
+      float:left;
+      width:761px;
+      height:400px;
+      background-color:#ffffff7c;
+    }
+    #footer {
+      float:left;
+      width:1500px;
+      height:100px;
+      background-color:#ffffffa6;
+    }
+    
+  </style>
+ 
+  <style>
+    font-family: 'Baloo 2', cursive;
+  </style>
+</head>
+<body>
+  <script>
+
+    var b=document.querySelector('body');
+
+</script>
+<script>
+function changeIframeUrl(url)
+{
+
+    document.getElementById("main_frame").src = url;
+
+}
+</script>
+  <div id="header">
+  <h1>World Wide Scenery</h1>
+  </div>
+  <div style="background-color:rgb(221, 221, 221);">
+    <input type="button" value="Dark Mode" onclick="
+    //다크모드 구현//
+    
+    if(this.value==='Dark Mode')
+    {
+        
+        b.style.backgroundColor='black';
+        b.style.color='white';
+        this.value='Normal Mode';
+        
+    }
+    //노멀모드 구현//
+    else if(this.value==='Normal Mode')
+    {
+    b.style.backgroundColor='White';
+    b.style.color='black';
+    this.value='Dark Mode';
+    }    
+    ">
+     <input type="button" value="    Log-Out    " onclick="
+     alert('다음에 또 만나요.');
+     
+     location.href='index.html'">
+    
+</div>
+ 
+  <div id="section">
+    Menu
+    <div id="article">
+      
+        <input type="button" value="       Google Map Travel       " onclick="location.href='welcome1.html'">
+        <input type="button" value="                 Images                "  onclick = "changeIframeUrl('1.html')"></input>
+        <input type="button" value="                 Videos                 "  onclick = "changeIframeUrl('2.html')"></input>
+        <input type="button" value="                 Sources              "  onclick = "changeIframeUrl('3.html')"></input>
+      
+      <br><br><br><br>
+        <img src="gl.png" width="80px">
+        <form action="https://www.google.com/search">
+        <input type="text" size="13px"name="q" value="">
+        <input type="submit" value="Search">
+        </form>  
+    </div>
+  </div>
+  <div id="content">
+
+    <iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8028.2154393302635!2d126.62859226842626!3d37.55321110888367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7feb4a2bbbfd%3A0xf31456318e389b19!2z7J247LKc6rSR7Jet7IucIOyEnOq1rCDqsr3shJzrj5kg7JeQ7L2U66Gc!5e0!3m2!1sko!2skr!4v1583991088633!5m2!1sko!2skr" width="811px" height="421px" frameborder="0" border="0" scrolling="none" bgcolor=#EEEEEE bordercolor="#FF000000" marginwidth="20" marginheight="10" name="main_frame" id="main_frame"></iframe> 
+      
+  </div>
+  
+</body>
+</html>

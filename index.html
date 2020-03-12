@@ -1,17 +1,23 @@
-﻿<!--2020/03/09-->
-<!--html 문서의 구조는 doctype 설정
-html head body 로 구성// head에는 title과 meta chartset으로 구성-->
-
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <title> W.W.S. </title>
     <meta charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        text-shadow: 4px 4px 4px #aaa;
+      }
+    </style>
+    
     <script>
     function loginprog(){
         var username='kkim'
-        var real_pw='0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c';
+        var real_pw='0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c';//1111//
         var input_user=prompt('Input Username!');
         var input_pw=sha256(prompt('Input Password!'));
 
@@ -20,14 +26,9 @@ html head body 로 구성// head에는 title과 meta chartset으로 구성-->
             if(input_pw == real_pw)
             {
             alert('Welcome Back!');
-            //this.value='Log-Out';
-
-            location.href='welcome.html';
+            location.href='welcome1.html';
             }
-            //if(this.value == 'Log-Out')
-            //{
-            //    this.value = 'Log-In';
-            //}
+
             else
             {
             alert('Please check your user name or password!')
@@ -40,87 +41,23 @@ html head body 로 구성// head에는 title과 meta chartset으로 구성-->
         }
     </script>
 </head>
-<!-- html의 본체 시작-->
 <body>
 
-    
+    <div style="background-image:url('up.jpg');background-size:1400;">
 
-    <!--2020/03/10 style 속성은 특정 tag의 스타일을 바꿔줌///style 의 속성은 CSS-->
-    <!--2020/03/10-->
-    <!--script는 html, alert는 js-->
-    <!--<script>
-        alert('안녕하세요!');
-    </script>-->
-    <!---->
-    <!-- <div> style="background-image:url('up.jpg');"> -->
-    <div style="background-image:url('up.jpg');background-size:1600px;">
-
-    <h1> <!--<a href="index.html">--><font size="6" color="white" > World Wide Scenery</font></a> </h1>
-    <!--<script>
-    //    var i;
-    //    for(i=0;i<50;i++)
-    //    {
-    //        &nbsp;
-    //    }
-    //</script>-->
+    <h1> <font size="6" color="white" > World Wide Scenery</font></a> </h1>
     
-    <font color='white' size='3'>&nbsp;Log-In to use this website &nbsp;</font>
+    <font color='white' size='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log-In to use this website &nbsp;</font>
     <input type="button" value="    Log-In    " onclick="
     loginprog();">
     <br>
     <font color='white' size='3'>&nbsp;&nbsp;</font>
     </div>
-    <img src="maindp_1.jpg" height="550" width="372">
-    <img src="maindp_2.jpg" height="550" width="372">
-    <img src="maindp_3.jpg" height="550" width="372">
-    <img src="maindp_4.jpg" height="550" width="370">
+    <img src="maindp_1.jpg" height="550" width="371">
+    <img src="maindp_2.jpg" height="550" width="371">
+    <img src="maindp_3.jpg" height="550" width="371">
+    <img src="maindp_4.jpg" height="550" width="371">
 
-    <!--<input type="button" value="Dark Mode" onclick="
-    //다크모드 구현//
-    if(this.value==='Dark Mode')
-    {
-        
-        b.style.backgroundColor='black';
-        b.style.color='white';
-        this.value='Normal Mode';
-        
-    }
-    //노멀모드 구현//
-    else if(this.value==='Normal Mode')
-    {
-    b.style.backgroundColor='White';
-    b.style.color='black';
-    this.value='Dark Mode';
-    }    
-    ">
-    <br>
-    <br>
-    </div>
-    <div style="background-image:url('main_6.jpg');">
-    <Strong><font size="5" color="white" >MENU</font></Strong>
-    <ol><font color="white">
-        <li><a href="1.html"><font size="3" color="white" >Random Images</font></a></li>
-        <li><a href="2.html"><font size="3" color="white">Videos</font></a></li>
-        <li><a href="3.html"><font size="3" color="white">More Info</font></a></li>
-    </ol></font>
-    <br>
-    </br>
-    <!--2020/03/10-->
-    <!--onclick에 click 시의 action을 정의할 수 있는데, 뒤에 속성값으로 js가 들어감.-->
-    <!--<br>
-    <!--<input type="button" value="Dark Mode" onclick="
-    b.style.backgroundColor='black';
-    b.style.color='white'">
-
-    <input type="button" value="Normal Mode" onclick="
-    b.style.backgroundColor='White';
-    b.style.color='black'">-->
-    <!--<br>
-    </br>
-</div>-->
-
-    
-   
 </body>
 
 
